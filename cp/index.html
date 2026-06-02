@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HiveNest Client Portal - Manage your digital services">
+    <title>Client Portal - HiveNest Matrix</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/navigation.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="cyber-body">
+    
+    <!-- Navigation Header -->
+    <nav class="navbar client-nav">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <i class="fas fa-user-circle"></i>
+                CLIENT PORTAL
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- Desktop Navigation -->
+            <ul class="navbar-nav">
+                <li><a href="index.html" class="active"><i class="fas fa-tachometer-alt"></i> DASHBOARD</a></li>
+                <li><a href="domains/index.html"><i class="fas fa-globe"></i> DOMAINS</a></li>
+                <li><a href="hosting/index.html"><i class="fas fa-server"></i> HOSTING</a></li>
+                <li><a href="email/index.html"><i class="fas fa-envelope"></i> EMAIL</a></li>
+                <li><a href="ssl/index.html"><i class="fas fa-shield-alt"></i> SSL</a></li>
+                <li><a href="support/index.html"><i class="fas fa-headset"></i> SUPPORT</a></li>
+                <li><a href="billing/index.html"><i class="fas fa-credit-card"></i> BILLING</a></li>
+                <li><a href="../hivenest.co.za-Public_html/index.html" class="btn-logout"><i class="fas fa-sign-out-alt"></i> LOGOUT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <h3 class="mobile-menu-title">CLIENT PORTAL</h3>
+                <button class="mobile-menu-close">×</button>
+            </div>
+            <div class="mobile-menu-body">
+                <ul class="mobile-menu-list">
+                    <li><a href="index.html" class="mobile-menu-link active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="domains/index.html" class="mobile-menu-link"><i class="fas fa-globe"></i> Domains</a></li>
+                    <li><a href="hosting/index.html" class="mobile-menu-link"><i class="fas fa-server"></i> Hosting</a></li>
+                    <li><a href="email/index.html" class="mobile-menu-link"><i class="fas fa-envelope"></i> Email</a></li>
+                    <li><a href="ssl/index.html" class="mobile-menu-link"><i class="fas fa-shield-alt"></i> SSL</a></li>
+                    <li><a href="support/index.html" class="mobile-menu-link"><i class="fas fa-headset"></i> Support</a></li>
+                    <li><a href="billing/index.html" class="mobile-menu-link"><i class="fas fa-credit-card"></i> Billing</a></li>
+                </ul>
+                <div class="mobile-menu-actions">
+                    <a href="../hivenest.co.za-Public_html/index.html" class="mobile-menu-btn btn-outline">
+                        <i class="fas fa-sign-out-alt"></i> Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="dashboard-container">
+        
+        <!-- Welcome Section -->
+        <section class="welcome-section">
+            <div class="container">
+                <h1 class="dashboard-title">WELCOME TO YOUR <span class="cyber-text">DIGITAL COMMAND CENTER</span></h1>
+                <p class="dashboard-subtitle">Manage your services, monitor performance, and control your digital empire</p>
+            </div>
+        </section>
+
+        <!-- Quick Stats -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="cyber-card stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="stat-title">Active Services</h3>
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Running smoothly</div>
+                        <div class="stat-status active">OPERATIONAL</div>
+                    </div>
+                    
+                    <div class="cyber-card stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h3 class="stat-title">Next Payment</h3>
+                        <div class="stat-number">$89.99</div>
+                        <div class="stat-label">Due Aug 15, 2024</div>
+                        <div class="stat-status warning">DUE SOON</div>
+                    </div>
+                    
+                    <div class="cyber-card stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-ticket-alt"></i>
+                        </div>
+                        <h3 class="stat-title">Support Tickets</h3>
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Open ticket</div>
+                        <div class="stat-status pending">PENDING</div>
+                    </div>
+
+                    <div class="cyber-card stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="stat-title">Uptime</h3>
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">This month</div>
+                        <div class="stat-status excellent">EXCELLENT</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Overview -->
+        <section class="services-overview">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">YOUR ACTIVE <span class="cyber-text">SERVICES</span></h2>
+                    <a href="services/manage.html" class="btn btn-outline">Manage All</a>
+                </div>
+                
+                <div class="services-grid">
+                    
+                    <div class="cyber-card service-item">
+                        <div class="service-header">
+                            <div class="service-icon domain">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="service-info">
+                                <h4 class="service-name">yourdomain.com</h4>
+                                <p class="service-type">Domain Registration</p>
+                            </div>
+                            <div class="service-status active">ACTIVE</div>
+                        </div>
+                        <div class="service-details">
+                            <div class="service-detail">
+                                <span class="detail-label">Expires:</span>
+                                <span class="detail-value">Jul 15, 2025</span>
+                            </div>
+                            <div class="service-detail">
+                                <span class="detail-label">Auto-Renew:</span>
+                                <span class="detail-value enabled">Enabled</span>
+                            </div>
+                        </div>
+                        <div class="service-actions">
+                            <a href="domains/manage.html?domain=yourdomain.com" class="btn btn-primary btn-sm">Manage DNS</a>
+                            <a href="domains/renew.html?domain=yourdomain.com" class="btn btn-outline btn-sm">Renew</a>
+                        </div>
+                    </div>
+                    
+                    <div class="cyber-card service-item">
+                        <div class="service-header">
+                            <div class="service-icon hosting">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="service-info">
+                                <h4 class="service-name">Cyber Initiate Hosting</h4>
+                                <p class="service-type">Shared Hosting</p>
+                            </div>
+                            <div class="service-status active">ACTIVE</div>
+                        </div>
+                        <div class="service-details">
+                            <div class="service-detail">
+                                <span class="detail-label">Storage Used:</span>
+                                <span class="detail-value">2.1GB / 10GB</span>
+                            </div>
+                            <div class="service-detail">
+                                <span class="detail-label">Next Billing:</span>
+                                <span class="detail-value">Aug 15, 2024</span>
+                            </div>
+                        </div>
+                        <div class="service-actions">
+                            <a href="hosting/filemanager.html" class="btn btn-primary btn-sm">File Manager</a>
+                            <a href="hosting/cpanel.html" class="btn btn-outline btn-sm">cPanel</a>
+                        </div>
+                    </div>
+
+                    <div class="cyber-card service-item">
+                        <div class="service-header">
+                            <div class="service-icon email">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="service-info">
+                                <h4 class="service-name">Professional Email</h4>
+                                <p class="service-type">Email Hosting</p>
+                            </div>
+                            <div class="service-status active">ACTIVE</div>
+                        </div>
+                        <div class="service-details">
+                            <div class="service-detail">
+                                <span class="detail-label">Accounts:</span>
+                                <span class="detail-value">3 / 5</span>
+                            </div>
+                            <div class="service-detail">
+                                <span class="detail-label">Storage:</span>
+                                <span class="detail-value">1.2GB / 10GB</span>
+                            </div>
+                        </div>
+                        <div class="service-actions">
+                            <a href="email/webmail.html" class="btn btn-primary btn-sm">Webmail</a>
+                            <a href="email/accounts.html" class="btn btn-outline btn-sm">Manage</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="quick-actions">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">QUICK <span class="cyber-text">ACTIONS</span></h2>
+                </div>
+                
+                <div class="actions-grid">
+                    <a href="domains/register.html" class="cyber-card action-card">
+                        <div class="action-icon">
+                            <i class="fas fa-plus-circle"></i>
+                        </div>
+                        <h4 class="action-title">Register Domain</h4>
+                        <p class="action-description">Secure your perfect domain name</p>
+                    </a>
+                    
+                    <a href="support/create-ticket.html" class="cyber-card action-card">
+                        <div class="action-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4 class="action-title">Open Support Ticket</h4>
+                        <p class="action-description">Get help from our cyber experts</p>
+                    </a>
+                    
+                    <a href="billing/pay-invoice.html" class="cyber-card action-card">
+                        <div class="action-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h4 class="action-title">Make Payment</h4>
+                        <p class="action-description">Pay invoices and add credit</p>
+                    </a>
+                    
+                    <a href="hosting/upgrade.html" class="cyber-card action-card">
+                        <div class="action-icon">
+                            <i class="fas fa-arrow-up"></i>
+                        </div>
+                        <h4 class="action-title">Upgrade Services</h4>
+                        <p class="action-description">Scale your digital infrastructure</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- Footer -->
+    <footer class="client-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <p>&copy; 2024 HiveNest Matrix. All rights reserved.</p>
+                </div>
+                <div class="footer-section">
+                    <a href="../hivenest.co.za-Public_html/legal/privacy.html" class="footer-link">Privacy Policy</a>
+                    <a href="../hivenest.co.za-Public_html/legal/terms.html" class="footer-link">Terms of Service</a>
+                    <a href="support/index.html" class="footer-link">Support</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HiveNest CRM - Admin Control Center">
+    <title>Admin CRM - HiveNest Matrix</title>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/navigation.css">
+    <link rel="stylesheet" href="assets/css/admin.css">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="cyber-body admin-body">
+    
+    <!-- Admin Navigation Header -->
+    <nav class="navbar admin-nav">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-brand">
+                <i class="fas fa-shield-alt"></i>
+                HIVENEST CRM
+            </a>
+            
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <!-- Desktop Navigation -->
+            <ul class="navbar-nav">
+                <li><a href="index.html" class="active"><i class="fas fa-chart-pie"></i> DASHBOARD</a></li>
+                <li><a href="customers/index.html"><i class="fas fa-users"></i> CUSTOMERS</a></li>
+                <li><a href="orders/index.html"><i class="fas fa-shopping-cart"></i> ORDERS</a></li>
+                <li><a href="services/index.html"><i class="fas fa-cogs"></i> SERVICES</a></li>
+                <li><a href="support/index.html"><i class="fas fa-headset"></i> SUPPORT</a></li>
+                <li><a href="reports/index.html"><i class="fas fa-chart-bar"></i> REPORTS</a></li>
+                <li><a href="settings/index.html"><i class="fas fa-sliders-h"></i> SETTINGS</a></li>
+                <li><a href="../hivenest.co.za-Public_html/index.html" class="btn-logout"><i class="fas fa-power-off"></i> LOGOUT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <div class="mobile-menu-content">
+            <div class="mobile-menu-header">
+                <h3 class="mobile-menu-title">ADMIN CRM</h3>
+                <button class="mobile-menu-close">×</button>
+            </div>
+            <div class="mobile-menu-body">
+                <ul class="mobile-menu-list">
+                    <li><a href="index.html" class="mobile-menu-link active"><i class="fas fa-chart-pie"></i> Dashboard</a></li>
+                    <li><a href="customers/index.html" class="mobile-menu-link"><i class="fas fa-users"></i> Customers</a></li>
+                    <li><a href="orders/index.html" class="mobile-menu-link"><i class="fas fa-shopping-cart"></i> Orders</a></li>
+                    <li><a href="services/index.html" class="mobile-menu-link"><i class="fas fa-cogs"></i> Services</a></li>
+                    <li><a href="support/index.html" class="mobile-menu-link"><i class="fas fa-headset"></i> Support</a></li>
+                    <li><a href="reports/index.html" class="mobile-menu-link"><i class="fas fa-chart-bar"></i> Reports</a></li>
+                    <li><a href="settings/index.html" class="mobile-menu-link"><i class="fas fa-sliders-h"></i> Settings</a></li>
+                </ul>
+                <div class="mobile-menu-actions">
+                    <a href="../hivenest.co.za-Public_html/index.html" class="mobile-menu-btn btn-outline">
+                        <i class="fas fa-power-off"></i> Logout
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="admin-container">
+        
+        <!-- Admin Welcome Section -->
+        <section class="admin-welcome">
+            <div class="container">
+                <h1 class="admin-title">ADMIN <span class="cyber-text">COMMAND CENTER</span></h1>
+                <p class="admin-subtitle">Total control over your digital empire. Monitor, manage, and dominate.</p>
+                <div class="admin-alerts">
+                    <div class="alert alert-urgent">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span>5 urgent support tickets require immediate attention</span>
+                        <a href="support/urgent.html" class="alert-action">View Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Business Metrics -->
+        <section class="metrics-section">
+            <div class="container">
+                <div class="metrics-grid">
+                    
+                    <div class="cyber-card metric-card">
+                        <div class="metric-header">
+                            <div class="metric-icon customers">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="metric-trend positive">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>+12%</span>
+                            </div>
+                        </div>
+                        <h3 class="metric-title">Total Customers</h3>
+                        <div class="metric-number">1,234</div>
+                        <div class="metric-label">+15 this week</div>
+                        <div class="metric-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="85%" style="width: 85%;"></div>
+                            </div>
+                            <span class="progress-text">85% retention rate</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cyber-card metric-card">
+                        <div class="metric-header">
+                            <div class="metric-icon revenue">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="metric-trend positive">
+                                <i class="fas fa-arrow-up"></i>
+                                <span>+23%</span>
+                            </div>
+                        </div>
+                        <h3 class="metric-title">Monthly Revenue</h3>
+                        <div class="metric-number">$45,678</div>
+                        <div class="metric-label">vs last month</div>
+                        <div class="metric-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="92%" style="width: 92%;"></div>
+                            </div>
+                            <span class="progress-text">92% of target</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cyber-card metric-card">
+                        <div class="metric-header">
+                            <div class="metric-icon services">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="metric-trend neutral">
+                                <i class="fas fa-minus"></i>
+                                <span>98.5%</span>
+                            </div>
+                        </div>
+                        <h3 class="metric-title">Active Services</h3>
+                        <div class="metric-number">3,456</div>
+                        <div class="metric-label">uptime this month</div>
+                        <div class="metric-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" data-width="98%" style="width: 98%;"></div>
+                            </div>
+                            <span class="progress-text">98.5% uptime</span>
+                        </div>
+                    </div>
+                    
+                    <div class="cyber-card metric-card">
+                        <div class="metric-header">
+                            <div class="metric-icon support">
+                                <i class="fas fa-headset"></i>
+                            </div>
+                            <div class="metric-trend warning">
+                                <i class="fas fa-exclamation"></i>
+                                <span>URGENT</span>
+                            </div>
+                        </div>
+                        <h3 class="metric-title">Support Queue</h3>
+                        <div class="metric-number">23</div>
+                        <div class="metric-label">5 urgent tickets</div>
+                        <div class="metric-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill warning" data-width="35%" style="width: 35%;"></div>
+                            </div>
+                            <span class="progress-text">35% resolved today</span>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Dashboard Grid -->
+        <section class="dashboard-grid-section">
+            <div class="container">
+                <div class="dashboard-grid">
+                    
+                    <!-- Recent Orders -->
+                    <div class="cyber-card orders-widget">
+                        <div class="widget-header">
+                            <h2 class="widget-title">RECENT <span class="cyber-text">ORDERS</span></h2>
+                            <a href="orders/index.html" class="btn btn-outline btn-sm">View All</a>
+                        </div>
+                        <div class="data-table">
+                            <table class="cyber-table">
+                                <thead>
+                                    <tr>
+                                        <th>Order #</th>
+                                        <th>Customer</th>
+                                        <th>Amount</th>
+                                        <th>Status</th>
+                                        <th>Actions</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="order-number">#ORD-2024-001</td>
+                                        <td>
+                                            <div class="customer-info">
+                                                <span class="customer-name">John Doe</span>
+                                                <span class="customer-email">john@example.com</span>
+                                            </div>
+                                        </td>
+                                        <td class="amount">$18.98</td>
+                                        <td><span class="status-badge completed">COMPLETED</span></td>
+                                        <td>
+                                            <div class="table-actions">
+                                                <button class="btn btn-mini btn-primary" data-tooltip="View Order">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="btn btn-mini btn-outline" data-tooltip="Process Order">
+                                                    <i class="fas fa-cog"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="order-number">#ORD-2024-002</td>
+                                        <td>
+                                            <div class="customer-info">
+                                                <span class="customer-name">Jane Smith</span>
+                                                <span class="customer-email">jane@techcorp.com</span>
+                                            </div>
+                                        </td>
+                                        <td class="amount">$45.98</td>
+                                        <td><span class="status-badge processing">PROCESSING</span></td>
+                                        <td>
+                                            <div class="table-actions">
+                                                <button class="btn btn-mini btn-primary">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="btn btn-mini btn-warning">
+                                                    <i class="fas fa-play"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="order-number">#ORD-2024-003</td>
+                                        <td>
+                                            <div class="customer-info">
+                                                <span class="customer-name">Mike Johnson</span>
+                                                <span class="customer-email">mike@startup.com</span>
+                                            </div>
+                                        </td>
+                                        <td class="amount">$129.99</td>
+                                        <td><span class="status-badge pending">PENDING</span></td>
+                                        <td>
+                                            <div class="table-actions">
+                                                <button class="btn btn-mini btn-primary">
+                                                    <i class="fas fa-eye"></i>
+                                                </button>
+                                                <button class="btn btn-mini btn-success">
+                                                    <i class="fas fa-check"></i>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Support Tickets -->
+                    <div class="cyber-card support-widget">
+                        <div class="widget-header">
+                            <h2 class="widget-title">SUPPORT <span class="cyber-text">TICKETS</span></h2>
+                            <a href="support/index.html" class="btn btn-outline btn-sm">Manage All</a>
+                        </div>
+                        <div class="ticket-list">
+                            
+                            <div class="ticket-item urgent">
+                                <div class="ticket-priority">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                    <span>URGENT</span>
+                                </div>
+                                <div class="ticket-info">
+                                    <h4 class="ticket-subject">#TIC-001 - Server Down</h4>
+                                    <p class="ticket-details">Customer: John Doe • Opened 2 hours ago</p>
+                                    <div class="ticket-tags">
+                                        <span class="tag">hosting</span>
+                                        <span class="tag">server</span>
+                                    </div>
+                                </div>
+                                <div class="ticket-actions">
+                                    <button class="btn btn-primary btn-sm">Respond</button>
+                                    <button class="btn btn-outline btn-sm">Assign</button>
+                                </div>
+                            </div>
+                            
+                            <div class="ticket-item high">
+                                <div class="ticket-priority">
+                                    <i class="fas fa-exclamation"></i>
+                                    <span>HIGH</span>
+                                </div>
+                                <div class="ticket-info">
+                                    <h4 class="ticket-subject">#TIC-002 - SSL Certificate Issue</h4>
+                                    <p class="ticket-details">Customer: Jane Smith • Opened 5 hours ago</p>
+                                    <div class="ticket-tags">
+                                        <span class="tag">ssl</span>
+                                        <span class="tag">security</span>
+                                    </div>
+                                </div>
+                                <div class="ticket-actions">
+                                    <button class="btn btn-primary btn-sm">Respond</button>
+                                    <button class="btn btn-outline btn-sm">Assign</button>
+                                </div>
+                            </div>
+                            
+                            <div class="ticket-item medium">
+                                <div class="ticket-priority">
+                                    <i class="fas fa-minus"></i>
+                                    <span>MEDIUM</span>
+                                </div>
+                                <div class="ticket-info">
+                                    <h4 class="ticket-subject">#TIC-003 - Email Setup Help</h4>
+                                    <p class="ticket-details">Customer: Mike Johnson • Opened 1 day ago</p>
+                                    <div class="ticket-tags">
+                                        <span class="tag">email</span>
+                                        <span class="tag">setup</span>
+                                    </div>
+                                </div>
+                                <div class="ticket-actions">
+                                    <button class="btn btn-primary btn-sm">Respond</button>
+                                    <button class="btn btn-outline btn-sm">Assign</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Performance Monitor -->
+                    <div class="cyber-card performance-widget">
+                        <div class="widget-header">
+                            <h2 class="widget-title">SYSTEM <span class="cyber-text">PERFORMANCE</span></h2>
+                            <div class="widget-controls">
+                                <button class="btn btn-mini btn-outline" data-tooltip="Refresh">
+                                    <i class="fas fa-sync"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="performance-metrics">
+                            
+                            <div class="performance-item">
+                                <div class="performance-label">
+                                    <i class="fas fa-server"></i>
+                                    <span>Server Load</span>
+                                </div>
+                                <div class="performance-value">
+                                    <span class="value">23%</span>
+                                    <div class="mini-progress">
+                                        <div class="mini-progress-fill" style="width: 23%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="performance-item">
+                                <div class="performance-label">
+                                    <i class="fas fa-memory"></i>
+                                    <span>Memory Usage</span>
+                                </div>
+                                <div class="performance-value">
+                                    <span class="value">67%</span>
+                                    <div class="mini-progress">
+                                        <div class="mini-progress-fill warning" style="width: 67%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="performance-item">
+                                <div class="performance-label">
+                                    <i class="fas fa-hdd"></i>
+                                    <span>Disk Space</span>
+                                </div>
+                                <div class="performance-value">
+                                    <span class="value">45%</span>
+                                    <div class="mini-progress">
+                                        <div class="mini-progress-fill" style="width: 45%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="performance-item">
+                                <div class="performance-label">
+                                    <i class="fas fa-wifi"></i>
+                                    <span>Network I/O</span>
+                                </div>
+                                <div class="performance-value">
+                                    <span class="value">12%</span>
+                                    <div class="mini-progress">
+                                        <div class="mini-progress-fill" style="width: 12%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="cyber-card actions-widget">
+                        <div class="widget-header">
+                            <h2 class="widget-title">QUICK <span class="cyber-text">ACTIONS</span></h2>
+                        </div>
+                        <div class="quick-actions-grid">
+                            
+                            <a href="customers/add.html" class="action-item">
+                                <div class="action-icon">
+                                    <i class="fas fa-user-plus"></i>
+                                </div>
+                                <span class="action-label">Add Customer</span>
+                            </a>
+                            
+                            <a href="orders/process.html" class="action-item">
+                                <div class="action-icon">
+                                    <i class="fas fa-play"></i>
+                                </div>
+                                <span class="action-label">Process Orders</span>
+                            </a>
+                            
+                            <a href="services/provision.html" class="action-item">
+                                <div class="action-icon">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                                <span class="action-label">Provision Service</span>
+                            </a>
+                            
+                            <a href="support/assign.html" class="action-item">
+                                <div class="action-icon">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                                <span class="action-label">Assign Tickets</span>
+                            </a>
+                            
+                            <a href="reports/generate.html" class="action-item">
+                                <div class="action-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <span class="action-label">Generate Report</span>
+                            </a>
+                            
+                            <a href="settings/system.html" class="action-item">
+                                <div class="action-icon">
+                                    <i class="fas fa-cog"></i>
+                                </div>
+                                <span class="action-label">System Settings</span>
+                            </a>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    
+    <!-- Admin Footer -->
+    <footer class="admin-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <p>&copy; 2024 HiveNest Matrix Admin System. All rights reserved.</p>
+                </div>
+                <div class="footer-section">
+                    <span class="system-status">
+                        <i class="fas fa-circle status-indicator active"></i>
+                        System Status: Operational
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/admin.js"></script>
+</body>
+</html>
