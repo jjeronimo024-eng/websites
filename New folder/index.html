@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="tablesort-master/dist/tablesort.min.js"></script>
+  <title>SSL Data</title>
+</head>
+<body>
+  <div class="container">
+    <h1>SSL Data</h1>
+    <table id="SSL_data" class="tablesort">
+      <thead>
+        <tr>
+          <th>SSL ID</th>
+          <th>Company</th>
+          <th>Domain Name</th>
+          <th>Added Date</th>
+          <th>Expiry Date</th>
+          <th>Days Left</th>
+          <th>SSL Status</th>
+          <th>Edit</th>
+        </tr>
+      </thead>
+      <tbody id="sslTableBody">
+        <!-- Data rows will be dynamically added here -->
+    </tbody>
+  </table>
+  <button id="add-button">Add</button>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

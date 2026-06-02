@@ -1,0 +1,13 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 16 Apr 2025 11:52:24 at https://ovo-feathers.webflow.io/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qiC2%Pns0u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; MSIE 4.01; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://ovo-feathers.webflow.io/ -O1 "C:\Users\Jose\Desktop\Redirct default file\WEB\ovo-feathers.webflow" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+11:52:39	Error: 	"Not Found" (404) at link https://fonts.googleapis.com/ (from https://ovo-feathers.webflow.io/)
+11:52:39	Error: 	"Not Found" (404) at link https://fonts.gstatic.com/ (from https://ovo-feathers.webflow.io/)
+
+HTTrack Website Copier/3.49-2 mirror complete in 24 seconds : 76 links scanned, 74 files written (7651438 bytes overall), 74 files updated [7105990 bytes received at 296082 bytes/sec], 816270 bytes transferred using HTTP compression in 39 files, ratio 26%, 6.9 requests per connection
+(2 errors, 0 warnings, 0 messages)
